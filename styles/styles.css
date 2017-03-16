@@ -1,0 +1,14 @@
+body{
+	padding: 75px;
+}
+
+.center{
+	
+}
+
+#searchButton{
+	width:50px !important;
+	height:50px !important;
+	border: 1px solid yellow;
+	border-radius: 50%;
+}
