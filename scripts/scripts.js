@@ -6,10 +6,10 @@ $(document).ready(function(){
 	search.on("#submit", function(e){
 		
 		e.preventDefault();
-		var query = $("#search").val().trim();
+		query = $("#search").val().trim();
 		
 		if ( query != ''){
-			
+			console.log(query);
 		}
 		else{
 			console.log("Nothing to display");
