@@ -1,8 +1,10 @@
 $(document).ready(function(){
-	var search = $("inputButton");
+	var search = $("#inputButton");
 	var results = [];
 	
-	search.on("submit", function(){
+	search.on("#submit", function(e){
+		
+		e.preventDefault();
 		var query = $("#search").val().trim();
 		
 		if ( query !== ''){
