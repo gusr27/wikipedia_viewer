@@ -1,17 +1,18 @@
 $(document).ready(function(){
-	
-	$("input[name='submit']").submit(function(){
-		.ajax(
-			URL = "https://en.wikipedia.org/w/api.php?" + "action=query&titles=" + encodeURIComponent($("input[name='submit']").val())+"&rvprop=content&prop=revisions"
+	var search = $("input[name='submit']");
+	var results = [];
+	search.submit(function(){
+		
+			URL = "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=" + encodeURIComponent($("input[name='submit']").val() + "&callback=JSON_CALLBACK";
 			
-			url: URL,
-			data: queryData,
-			dataType: 'json',
-			type: 'POST',
-			headers: { 'Api-User-Agent': 'Gus' },
-			success: function(data){
-					
-			};
+			$http.jsonp(URL).success(function(data){
+				
+				results = data.query.pages;
+				
+				results.forEach(function(){
+					results.push([]);
+				});
+			});
 			
 			
 			
