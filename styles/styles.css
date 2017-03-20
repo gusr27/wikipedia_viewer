@@ -2,7 +2,7 @@
 
 body{
 	padding: 75px;
-	background: navy !important;
+	background: #3511C9 !important;
 	width: 98%;
 	height: 100% !important;
 }
@@ -10,8 +10,35 @@ a {
 	color: #69C;
 	text-decoration: none;
 }
+.list-group{
+	margin-top: 20px;
+	z-index: 0;
+}
+
+.list-group-item{
+	margin-bottom: 20px !important;
+	border: 1px solid #FFCF00 !important;
+	border-radius: 10px !important;
+	
+}
+
+
+#pages .page{
+	
+	background: #FFCF00 !important;
+}
+.page h1{
+	font-size: 1.2em;
+}
+.thumbnail{
+	display: inline-block !important;
+	margin: 5px;
+}
+
+/*Search Bar CSS*/
 input {
 	outline: none;
+	z-index: 1;
 }
 input[type=search] {
 	-webkit-appearance: textfield;
