@@ -65,7 +65,7 @@ function fetchApi(query){
 						
 						html+= "<li class=\"list-group-item\">" ;
 						html+= image;
-						html+= "<a href=" + value.canonicalurl + ">"+value.title + "</a>";
+						html+= "<a href=" + value.canonicalurl + " target='_blank'>"+value.title + "</a>";
 						html+= "<p>" + value.extract + "</p>";
 						html+="</li>";
 					})
