@@ -29,7 +29,7 @@ function fetchApi(query){
 				
 				
 				url: api,
-				dataType: 'json',
+				dataType: 'jsonp',
 				data: {
 			      "action": "query",
 			      "format": "json",
